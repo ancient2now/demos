@@ -1,0 +1,7 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.akikun'
+version = '1.0.0-SNAPSHOT'
+sourceCompatibility = '8'
