@@ -1,5 +1,6 @@
 # IDEA
 /.idea
+*.iml
 
 # Gradle
 /.gradle
@@ -7,3 +8,7 @@
 
 # build
 /build
+/target
+
+# Mac
+.DS_Store
