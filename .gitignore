@@ -8,7 +8,7 @@
 
 # build
 /build
-/target
+*/target
 
 # Mac
 .DS_Store
