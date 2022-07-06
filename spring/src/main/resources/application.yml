@@ -1,0 +1,6 @@
+spring:
+  ldap:
+    urls: ldap://ldap.test.com:1389
+    base: dc=test,dc=com
+    username: cn=test
+    password: test
