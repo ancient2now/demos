@@ -5,7 +5,8 @@
     <packaging>pom</packaging>
     <modules>
         <module>spring</module>
-    </modules>
+		<module>juc</module>
+	</modules>
     <parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>

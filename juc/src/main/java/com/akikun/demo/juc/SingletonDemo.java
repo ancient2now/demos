@@ -1,4 +1,4 @@
-package com.akikun.demo.thread;
+package com.akikun.demo.juc;
 
 public class SingletonDemo {
 

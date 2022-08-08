@@ -1,8 +1,8 @@
-package com.akikun.demo.thread;
+package com.akikun.demo.juc;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
-public class CASDemo {
+public class CasDemo {
 
     public static void main(String[] args) {
 

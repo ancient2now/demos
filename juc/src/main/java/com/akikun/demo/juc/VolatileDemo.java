@@ -1,4 +1,4 @@
-package com.akikun.demo.thread;
+package com.akikun.demo.juc;
 
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
