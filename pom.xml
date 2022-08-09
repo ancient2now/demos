@@ -6,6 +6,9 @@
     <modules>
         <module>spring</module>
 		<module>juc</module>
+		<module>rpc</module>
+		<module>cache</module>
+		<module>trantor</module>
 	</modules>
     <parent>
 		<groupId>org.springframework.boot</groupId>

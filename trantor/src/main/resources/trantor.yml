@@ -1,0 +1,11 @@
+product:
+  key: demo
+  version: 0.0.1
+#  dependencies:
+#    - key: md
+module:
+  key: demo
+  name: Trantor Demo
+  packageName: com.akikun.trantor
+  version: 0.0.1
+  description: Trantor Demo

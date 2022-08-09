@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>demo</artifactId>
+        <groupId>com.akikun</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>trantor</artifactId>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+
+        <trantor.version>1.0.23.RELEASE</trantor.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>io.terminus.trantor</groupId>
+            <artifactId>trantor-api</artifactId>
+            <version>${trantor.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.terminus.trantor</groupId>
+            <artifactId>trantor-sdk</artifactId>
+            <version>${trantor.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.terminus.trantor</groupId>
+            <artifactId>test-framework</artifactId>
+            <version>${trantor.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>io.terminus.trantor</groupId>
+            <artifactId>trantor-runtime</artifactId>
+            <version>${trantor.version}</version>
+        </dependency>
+
+    </dependencies>
+
+</project>
