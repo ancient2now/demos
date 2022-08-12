@@ -19,30 +19,30 @@
     </properties>
 
     <dependencies>
-        <dependency>
-            <groupId>io.terminus.trantor</groupId>
-            <artifactId>trantor-api</artifactId>
-            <version>${trantor.version}</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>io.terminus.trantor</groupId>-->
+<!--            <artifactId>trantor-api</artifactId>-->
+<!--            <version>${trantor.version}</version>-->
+<!--        </dependency>-->
 
-        <dependency>
-            <groupId>io.terminus.trantor</groupId>
-            <artifactId>trantor-sdk</artifactId>
-            <version>${trantor.version}</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>io.terminus.trantor</groupId>-->
+<!--            <artifactId>trantor-sdk</artifactId>-->
+<!--            <version>${trantor.version}</version>-->
+<!--        </dependency>-->
 
-        <dependency>
-            <groupId>io.terminus.trantor</groupId>
-            <artifactId>test-framework</artifactId>
-            <version>${trantor.version}</version>
-            <scope>test</scope>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>io.terminus.trantor</groupId>-->
+<!--            <artifactId>test-framework</artifactId>-->
+<!--            <version>${trantor.version}</version>-->
+<!--            <scope>test</scope>-->
+<!--        </dependency>-->
 
-        <dependency>
-            <groupId>io.terminus.trantor</groupId>
-            <artifactId>trantor-runtime</artifactId>
-            <version>${trantor.version}</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>io.terminus.trantor</groupId>-->
+<!--            <artifactId>trantor-runtime</artifactId>-->
+<!--            <version>${trantor.version}</version>-->
+<!--        </dependency>-->
 
     </dependencies>
 

@@ -10,6 +10,7 @@
 		<module>cache</module>
 		<module>trantor</module>
 		<module>redis</module>
+		<module>obj</module>
 	</modules>
 <!--    <parent>-->
 <!--		<groupId>org.springframework.boot</groupId>-->
