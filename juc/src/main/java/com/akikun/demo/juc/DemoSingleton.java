@@ -1,18 +1,18 @@
 package com.akikun.demo.juc;
 
-public class SingletonDemo {
+public class DemoSingleton {
 
-    private static volatile SingletonDemo instance = null;
+    private static volatile DemoSingleton instance = null;
 
-    private SingletonDemo() {
+    private DemoSingleton() {
         System.out.println(Thread.currentThread().getName() + "\tConstructor SingletonDemo");
     }
 
-    public static SingletonDemo getInstance() {
+    public static DemoSingleton getInstance() {
         if (instance == null) {
-            synchronized (SingletonDemo.class) {
+            synchronized (DemoSingleton.class) {
                 if (instance == null) {
-                    instance = new SingletonDemo();
+                    instance = new DemoSingleton();
                 }
             }
         }
@@ -22,7 +22,7 @@ public class SingletonDemo {
 
     public static void main(String[] args) {
 
-        Runnable testSinglelon = SingletonDemo::getInstance;
+        Runnable testSinglelon = DemoSingleton::getInstance;
 
         for (int i = 0; i < 10; i++) {
             new Thread(testSinglelon, String.valueOf(i)).start();

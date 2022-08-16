@@ -8,7 +8,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  * 验证volatile的原子性 verifyAtomic
  *
  */
-public class VolatileDemo {
+public class DemoVolatile {
 
     public static void main(String[] args) {
 //        VolatileDemo test = new VolatileDemo();
