@@ -19,17 +19,17 @@
     </properties>
 
     <dependencies>
-<!--        <dependency>-->
-<!--            <groupId>io.terminus.trantor</groupId>-->
-<!--            <artifactId>trantor-api</artifactId>-->
-<!--            <version>${trantor.version}</version>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>io.terminus.trantor</groupId>
+            <artifactId>trantor-api</artifactId>
+            <version>${trantor.version}</version>
+        </dependency>
 
-<!--        <dependency>-->
-<!--            <groupId>io.terminus.trantor</groupId>-->
-<!--            <artifactId>trantor-sdk</artifactId>-->
-<!--            <version>${trantor.version}</version>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>io.terminus.trantor</groupId>
+            <artifactId>trantor-sdk</artifactId>
+            <version>${trantor.version}</version>
+        </dependency>
 
 <!--        <dependency>-->
 <!--            <groupId>io.terminus.trantor</groupId>-->
