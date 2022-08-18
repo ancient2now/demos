@@ -2,7 +2,7 @@ package com.akikun.demo.juc;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
-public class DemoCas {
+public class D01_Cas {
 
     public static void main(String[] args) {
 
