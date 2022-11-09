@@ -1,5 +1,6 @@
-package com.akikun.demo.spring;
+package com.akikun.demo.spring.controller;
 
+import com.akikun.demo.spring.service.LdapService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ldap.core.AttributesMapper;
 import org.springframework.ldap.core.LdapTemplate;

@@ -1,4 +1,4 @@
-package com.akikun.obj;
+package com.akikun.demo.obj;
 
 import org.openjdk.jol.info.ClassLayout;
 import org.openjdk.jol.info.GraphLayout;
@@ -6,7 +6,7 @@ import org.openjdk.jol.info.GraphLayout;
 /**
  * @author 李俊秋(龙泽)
  */
-public class Application {
+public class ObjectGraph {
 
     public static void main(String[] args) {
         T t = new T();
@@ -16,5 +16,12 @@ public class Application {
 
         System.out.println(graphLayout);
         System.out.println(claasLayout);
+    }
+
+    public static class T {
+
+        private int m = 8;
+
+        private int n = 0;
     }
 }

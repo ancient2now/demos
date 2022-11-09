@@ -5,21 +5,20 @@
     <packaging>pom</packaging>
     <modules>
         <module>spring</module>
-		<module>juc</module>
 		<module>rpc</module>
 		<module>cache</module>
 		<module>trantor</module>
 		<module>redis</module>
-		<module>obj</module>
-	</modules>
+        <module>jdk</module>
+    </modules>
 <!--    <parent>-->
 <!--		<groupId>org.springframework.boot</groupId>-->
 <!--		<artifactId>spring-boot-starter-parent</artifactId>-->
 <!--		<version>2.1.3.RELEASE</version>-->
 <!--		<relativePath/> &lt;!&ndash; lookup parent from repository &ndash;&gt;-->
 <!--	</parent>-->
-	<groupId>com.akikun</groupId>
-	<artifactId>demo</artifactId>
+	<groupId>com.akikun.demo</groupId>
+	<artifactId>parent</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>demo</name>
 	<description>Demo project for myself</description>

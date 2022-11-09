@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration>
+    <include resource="org/springframework/boot/logging/logback/defaults.xml"/>
+    <property name="LOG_FILE" value="/tmp/logs"/>
+    <include resource="org/springframework/boot/logging/logback/console-appender.xml"/>
+
+    <include resource="logback-appender.xml"/>
+
+    <root level="INFO">
+        <appender-ref ref="CONSOLE"/>
+        <appender-ref ref="OTHER"/>
+    </root>
+
+    <logger name="com.akikun.demo" level="DEBUG" addtivity="false">
+        <appender-ref ref="RUNNING"/>
+    </logger>
+
+    <logger name="org.springframework.web" level="DEBUG">
+        <appender-ref ref="SPRING"/>
+    </logger>
+
+<!--    <logger name="com.alibaba.dubbo" level="DEBUG">-->
+<!--        <appender-ref ref="DUBBO"/>-->
+<!--    </logger>-->
+
+    <logger name="springfox" level="ERROR"/>
+    <logger name="io.swagger" level="ERROR"/>
+
+
+</configuration>
