@@ -6,12 +6,13 @@
     <modules>
         <module>spring</module>
 		<module>rpc</module>
-		<module>cache</module>
+		<module>custom</module>
 		<module>trantor</module>
 		<module>redis</module>
         <module>jdk</module>
 		<module>netty</module>
-	</modules>
+        <module>designpattern</module>
+    </modules>
 <!--    <parent>-->
 <!--		<groupId>org.springframework.boot</groupId>-->
 <!--		<artifactId>spring-boot-starter-parent</artifactId>-->
