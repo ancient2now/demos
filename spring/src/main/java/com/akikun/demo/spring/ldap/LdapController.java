@@ -1,6 +1,5 @@
-package com.akikun.demo.spring.service;
+package com.akikun.demo.spring.ldap;
 
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ldap.core.AttributesMapper;
 import org.springframework.ldap.core.LdapTemplate;
@@ -9,47 +8,40 @@ import org.springframework.ldap.filter.EqualsFilter;
 import org.springframework.ldap.query.LdapQuery;
 import org.springframework.ldap.query.LdapQueryBuilder;
 import org.springframework.ldap.query.SearchScope;
-import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
 /**
  * @author 李俊秋(龙泽)
  */
-@Service
-@Slf4j
-public class LdapService {
+@RestController
+@RequestMapping("/ldap")
+public class LdapController {
+
+    @Autowired
+    private LdapService ldapService;
 
     @Autowired
     private LdapTemplate ldapTemplate;
 
-    public boolean audit() {
-        LdapQuery query = LdapQueryBuilder.query().filter(new EqualsFilter("cn", 17352));
-        try {
-            ldapTemplate.authenticate(query, "hello");
-            return true;
-        } catch (Exception e) {
-            log.warn("LDAP校验密码失败，cn={}, exception:", 061312, e);
-            return false;
-        }
+
+    @GetMapping("/audit")
+    public String audit() {
+        ldapService.audit();
+        return "ok";
     }
 
-    public boolean authenticate(String cn, String password) {
-        LdapQuery query = LdapQueryBuilder.query().filter("cn=" + cn);
-        try {
-            ldapTemplate.authenticate(query, password);
-            return true;
-        } catch (Exception e) {
-            log.warn("LDAP校验密码失败，cn={}, exception:", cn, e);
-            return false;
-        }
-    }
-
-    private List<String> find(String cn, String password) {
+    @GetMapping("/find")
+    @ResponseBody
+    public List<String> find() {
         AndFilter filter = new AndFilter();
         filter.and(new EqualsFilter("objectclass", "person"));
-        filter.and(new EqualsFilter("cn", cn));
-        filter.and(new EqualsFilter("userPassword", password));
+        filter.and(new EqualsFilter("cn", 10258));
+//        filter.and(new EqualsFilter("userPassword", "28211x"));
 
         LdapQuery ldapQuery = LdapQueryBuilder
                 .query()
@@ -58,7 +50,6 @@ public class LdapService {
                 .searchScope(SearchScope.SUBTREE)
                 .attributes("cn")
                 .filter(filter);
-
         List<String> result = ldapTemplate.search(ldapQuery, (AttributesMapper<String>) attrs -> (String) attrs.get("cn").get());
         return result;
     }

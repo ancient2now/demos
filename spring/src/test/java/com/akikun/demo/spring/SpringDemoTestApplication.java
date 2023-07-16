@@ -1,6 +1,6 @@
 package com.akikun.demo.spring;
 
-import com.akikun.demo.spring.service.LdapService;
+import com.akikun.demo.spring.ldap.LdapService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

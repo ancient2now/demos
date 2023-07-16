@@ -1,4 +1,4 @@
-package com.akikun.demo.spring.model;
+package com.akikun.demo.spring.signature;
 
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement;

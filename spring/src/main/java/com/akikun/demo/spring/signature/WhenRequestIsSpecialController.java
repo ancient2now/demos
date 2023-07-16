@@ -1,6 +1,5 @@
-package com.akikun.demo.spring.controller;
+package com.akikun.demo.spring.signature;
 
-import com.akikun.demo.spring.model.B2bPayTransInfo;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.RequestBody;
