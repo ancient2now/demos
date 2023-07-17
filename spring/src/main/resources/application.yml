@@ -4,3 +4,24 @@ spring:
     base: dc=test,dc=com
     username: cn=test
     password: test
+
+  datasource:
+    url: jdbc:h2:mem:zydb
+    driverClassName: org.h2.Driver
+    username: sa
+    password: 123456
+
+  jpa:
+    open-in-view: true   # 这个是为了进行视图显示，SpringBoot提示的Warn
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+      settings:
+        web-allow-others: true
+
+
