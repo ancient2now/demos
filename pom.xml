@@ -12,6 +12,7 @@
         <module>jdk</module>
 		<module>netty</module>
         <module>designpattern</module>
+        <module>tool</module>
     </modules>
 <!--    <parent>-->
 <!--		<groupId>org.springframework.boot</groupId>-->
