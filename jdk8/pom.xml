@@ -10,7 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.akikun.demo</groupId>
-    <artifactId>jdk</artifactId>
+    <artifactId>jdk8</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>

@@ -9,9 +9,9 @@
 		<module>custom</module>
 		<module>trantor</module>
 		<module>redis</module>
-        <module>jdk</module>
+        <module>jdk8</module>
 		<module>netty</module>
-        <module>designpattern</module>
+        <module>design-pattern</module>
         <module>tool</module>
     </modules>
 <!--    <parent>-->
