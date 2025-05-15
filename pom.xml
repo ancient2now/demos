@@ -13,6 +13,7 @@
 		<module>netty</module>
         <module>design-pattern</module>
         <module>tool</module>
+		<module>cloud</module>
     </modules>
 <!--    <parent>-->
 <!--		<groupId>org.springframework.boot</groupId>-->
